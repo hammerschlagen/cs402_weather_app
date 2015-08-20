@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Eye Weather|Login</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />
+   	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+</head>
+<body>
+	<div align="center" class="formBlock" id="loginBox">
+		<form role="form" class="loginForm" action="/latlon/login/login" method="POST">
+			<h2>Please sign in</h2>
+			<label class="sr-only" for="username">Username</label> 
+			<input class="form-control" type="text" id="usernameField" placeholder="Username" required autofocus name="username"> 
+			<label class="sr-only" for="inputPassword">Password</label> 
+			<input class="form-control" type="password" id="passwordField" placeholder="Password" required name="password">
+			<input class="btn btn-primary" type="submit" value="Sign in">
+		</form>
+	</div>
+</body>
+</html>

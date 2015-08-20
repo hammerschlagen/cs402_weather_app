@@ -1,0 +1,40 @@
+div#container {
+	width: 900px;
+	margin: auto;
+}
+
+div#locations {
+	width: 875px;
+	margin: auto;
+}
+
+div#container input {
+	width: 200px;
+	margin-right: 25px;
+}
+
+div.location {
+	border: 1px solid #337ab7;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	border-radius: 5px;
+}
+
+div.location p:first-child {
+	color: white;
+	background-color: #337ab7;
+	padding: 20px;
+}
+
+div.location p:not(:first-child) {
+	padding-left: 20px;
+}
+
+div#loginBox {
+	margin: auto;
+}
+
+div#loginBox input {
+	width: 400px;
+	margin: 25px;
+}

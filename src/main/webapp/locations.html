@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=ISO-8859-1">
+<title>Eye Weather|Locations</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/main.css" type="text/css" />  	
+	<script src="https://code.jquery.com/jquery-2.1.3.js"></script>
+   	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+   	<script src="js/latlon.js"></script>
+</head>
+<body>
+	<div class="container" id="container">
+		<h1 class="page-header">Eye Weather</h1>
+		<form class="form-inline">
+		  <div class="form-group">
+		    <label class="sr-only" for="latitudeField">Latitude</label>
+		    <input type="number" min="-90" max="90" step=".001" class="form-control" id="latitudeField" placeholder="Enter latitude">
+		  </div>
+		  <div class="form-group">
+		    <label class="sr-only" for="longitudeField">Longitude</label>
+		    <input type="number" min="-180" max="180" step=".001" class="form-control" id="longitudeField" placeholder="Enter Longitude">
+		  </div>
+		  <div onClick="addLocation()" class="btn btn-primary">Submit</div>
+		</form>
+	</div>
+	<!-- Location data will be filled here -->
+	<div id="locations"></div>
+</body>
+</html>
